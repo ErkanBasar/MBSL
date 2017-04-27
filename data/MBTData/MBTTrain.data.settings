@@ -1,9 +1,0 @@
-ENRICHED
-e <utt>
-l MBTTrain.data.lex.ambi.05
-k MBTTrain.data.known.ddfaa
-u MBTTrain.data.unknown.ddfaapsss
-p ddfaa
-P ddfaapsss
-O +vS -FColumns K: -a IGTREE +D U: -a IB1 
-L MBTTrain.data.top100

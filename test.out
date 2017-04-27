@@ -1,0 +1,146 @@
+Examine datafile 'flooddata.train' gave the following results:
+Number of Features: 45
+InputFormat       : Columns
+
+Phase 1: Reading Datafile: flooddata.train
+Start:          0 @ Sat Mar 18 23:37:43 2017
+Finished:   21278 @ Sat Mar 18 23:37:45 2017
+Calculating Entropy         Sat Mar 18 23:37:45 2017
+Lines of data     : 21278
+DB Entropy        : 1.0926221
+Number of Classes : 17
+
+Feats	Vals	InfoGain	GainRatio
+    1  21278	1.0926221	0.075997526
+    2      8	0.020152634	0.028917616
+    3     39	0.26458935	0.067011481
+    4   4919	0.64227500	0.065629632
+    5     18	0.19749056	0.14405194
+    6      8	0.010006414	0.015127192
+    7     39	0.084677683	0.021753181
+    8   4679	0.40190647	0.043364166
+    9      8	0.024329819	0.033631624
+   10     40	0.087327367	0.068285880
+   11    118	0.10552874	0.058943916
+   12     40	0.078319206	0.020279466
+   13    611	0.81894095	0.11140030
+   14   3625	0.90808597	0.088400070
+   15   5004	0.46899813	0.046347184
+   16  16782	1.0926221	0.079785736
+   17  19908	1.0926221	0.076940637
+   18     17	0.027758050	0.021944385
+   19      8	0.0071385362	0.010537739
+   20    111	0.099250413	0.056101677
+   21     41	0.031211341	0.0081184477
+   22   3616	0.88555439	0.085977137
+   23   4817	0.36794384	0.038481760
+   24  19720	1.0926221	0.077354828
+   25      2	0.00044404997	0.024647147
+   26      2	0.0024709892	0.011851660
+   27      2	0.00011567199	0.0088098577
+   28      2	0.0034869063	0.0078624818
+   29      2	0.061247680	0.10794659
+   30   4288	1.0916288	0.11096523
+   31      2	0.0017622637	0.0081754760
+   32      1	0.0000000	0.0000000
+   33      2	0.00049874156	0.0071172984
+   34      8	0.052960450	0.073787718
+   35     39	0.069695623	0.055888469
+   36    112	0.078218038	0.045218102
+   37     38	0.74539979	0.19333790
+   38    585	0.80427832	0.11305008
+   39   3385	0.87994890	0.089536729
+   40      2	0.00041838668	0.078197238
+   41      1	0.0000000	0.0000000
+   42      2	0.00066160976	0.0077661330
+   43   5073	1.0919529	0.10775372
+   44  16118	1.0926221	0.082988198
+   45  18658	1.0926221	0.080733300
+
+Preparation took 1 seconds, 187 milliseconds and 548 microseconds
+Feature Permutation based on GainRatio/Values :
+< 29, 40, 25, 34, 5, 26, 37, 27, 9, 31, 28, 42, 2, 33, 6, 3, 10, 35, 19, 18, 7, 12, 20, 11, 36, 21, 38, 13, 39, 30, 14, 22, 43, 4, 8, 15, 23, 44, 16, 45, 24, 17, 1, 32, 41 >
+Phase 2: Building multi index on Datafile: flooddata.train
+Start:          0 @ Sat Mar 18 23:37:45 2017
+Finished:   21278 @ Sat Mar 18 23:37:46 2017
+
+Phase 3: Learning from Datafile: flooddata.train
+Start:          0 @ Sat Mar 18 23:37:46 2017
+Finished:   21278 @ Sat Mar 18 23:37:47 2017
+
+Size of InstanceBase = 518802 Nodes, (20752080 bytes), 47.00 % compression
+Learning took 2 seconds, 129 milliseconds and 549 microseconds
+Examine datafile 'flooddata.test' gave the following results:
+Number of Features: 45
+InputFormat       : Columns
+
+
+Starting to test, Testfile: flooddata.test
+Writing output in:          flooddata.test.IB1.O.gr.k1.out
+Algorithm     : IB1
+Global metric : Overlap
+Deviant Feature Metrics:(none)
+Weighting     : GainRatio
+Feature 1	 : 0.075997525998081
+Feature 2	 : 0.028917616182640
+Feature 3	 : 0.067011481409203
+Feature 4	 : 0.065629631820071
+Feature 5	 : 0.144051940175230
+Feature 6	 : 0.015127191985363
+Feature 7	 : 0.021753181310274
+Feature 8	 : 0.043364165919668
+Feature 9	 : 0.033631624235462
+Feature 10	 : 0.068285879800098
+Feature 11	 : 0.058943915967990
+Feature 12	 : 0.020279466028712
+Feature 13	 : 0.111400297703401
+Feature 14	 : 0.088400069995589
+Feature 15	 : 0.046347184461207
+Feature 16	 : 0.079785736472436
+Feature 17	 : 0.076940636888311
+Feature 18	 : 0.021944384747789
+Feature 19	 : 0.010537738603464
+Feature 20	 : 0.056101677438818
+Feature 21	 : 0.008118447655301
+Feature 22	 : 0.085977136877208
+Feature 23	 : 0.038481759521279
+Feature 24	 : 0.077354827503861
+Feature 25	 : 0.024647147205705
+Feature 26	 : 0.011851660413655
+Feature 27	 : 0.008809857749294
+Feature 28	 : 0.007862481798526
+Feature 29	 : 0.107946585763457
+Feature 30	 : 0.110965225185974
+Feature 31	 : 0.008175475979766
+Feature 32	 : 0.000000000000000
+Feature 33	 : 0.007117298367182
+Feature 34	 : 0.073787717834141
+Feature 35	 : 0.055888469164322
+Feature 36	 : 0.045218101935132
+Feature 37	 : 0.193337899934634
+Feature 38	 : 0.113050084872546
+Feature 39	 : 0.089536729240664
+Feature 40	 : 0.078197238067999
+Feature 41	 : 0.000000000000000
+Feature 42	 : 0.007766133014080
+Feature 43	 : 0.107753724342118
+Feature 44	 : 0.082988198355724
+Feature 45	 : 0.080733299581112
+
+Tested:      1 @ Sat Mar 18 23:37:47 2017
+Tested:      2 @ Sat Mar 18 23:37:47 2017
+Tested:      3 @ Sat Mar 18 23:37:47 2017
+Tested:      4 @ Sat Mar 18 23:37:47 2017
+Tested:      5 @ Sat Mar 18 23:37:47 2017
+Tested:      6 @ Sat Mar 18 23:37:47 2017
+Tested:      7 @ Sat Mar 18 23:37:47 2017
+Tested:      8 @ Sat Mar 18 23:37:47 2017
+Tested:      9 @ Sat Mar 18 23:37:47 2017
+Tested:     10 @ Sat Mar 18 23:37:47 2017
+Tested:    100 @ Sat Mar 18 23:37:48 2017
+Tested:   1000 @ Sat Mar 18 23:38:01 2017
+Ready:    5320 @ Sat Mar 18 23:39:01 2017
+Seconds taken: 73.7821 (72.10 p/s)
+
+overall accuracy:        0.967669  (5148/5320)
+There were 40 ties of which 37 (92.50%) were correctly resolved
